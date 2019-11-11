@@ -12,5 +12,5 @@ package com.xpecya.xds;
  * 不可思议，无法理解
  * fuck jcp
  */
-public interface Tree<T> extends Graph<T> {
+public interface Tree<T> extends DirectedGraph<T> {
 }

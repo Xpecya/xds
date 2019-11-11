@@ -7,8 +7,8 @@ import java.util.function.Consumer;
 /**
  * graph api
  * 会自动去重
- * 对于任意 node A equals node B
- * 在图中只保留node A
+ * 对于任意 vertice A equals vertice B
+ * 在图中只保留vertice A
  * 是否接受null对象取决于实现类
  * Iterator遍历的是结点
  * 对边的遍历请使用edgeIterator方法
@@ -21,7 +21,7 @@ public interface Graph<T> extends Iterable<T> {
      * 检查指定结点是否在图中
      * @return 检查结果
      */
-    boolean contains(T node);
+    boolean contains(T vertice);
 
     /**
      * 检查指定边是否在图中
@@ -46,9 +46,9 @@ public interface Graph<T> extends Iterable<T> {
      * 向图中增加一个结点
      * 此结点不与图中任何其他结点连接
      * 如果图中已经存在该结点，则什么都不做
-     * @param node 结点
+     * @param vertice 结点
      */
-    void add(T node);
+    void add(T vertice);
 
     /**
      * 向图中增加包含两个结点的一条边
@@ -64,9 +64,9 @@ public interface Graph<T> extends Iterable<T> {
 
     /**
      * 删除一个结点，同时删除该结点上所有的边
-     * @param node 被删除的结点
+     * @param vertice 被删除的结点
      */
-    void remove(T node);
+    void remove(T vertice);
 
     /**
      * 删除一条边

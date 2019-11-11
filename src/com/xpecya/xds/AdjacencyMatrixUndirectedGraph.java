@@ -42,7 +42,7 @@ public class AdjacencyMatrixUndirectedGraph<T> extends AbstractUndirectedGraph<T
     }
 
     @Override
-    public boolean contains(T node) {
+    public boolean contains(T vertice) {
         return false;
     }
 
@@ -57,7 +57,7 @@ public class AdjacencyMatrixUndirectedGraph<T> extends AbstractUndirectedGraph<T
     }
 
     @Override
-    public void add(T node) {
+    public void add(T vertice) {
 
     }
 
@@ -67,7 +67,7 @@ public class AdjacencyMatrixUndirectedGraph<T> extends AbstractUndirectedGraph<T
     }
 
     @Override
-    public void remove(T node) {
+    public void remove(T vertice) {
 
     }
 
