@@ -1,4 +1,3 @@
 package com.xpecya.xds;
 
-public abstract class AbstractDirectedGraph<T> implements DirectedGraph<T> {
-}
+public abstract class AbstractDirectedGraph<T> implements DirectedGraph<T> {}
