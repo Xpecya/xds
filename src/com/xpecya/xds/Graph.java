@@ -1,7 +1,9 @@
 package com.xpecya.xds;
 
 import java.util.Iterator;
+import java.util.Objects;
 import java.util.Spliterator;
+import java.util.Spliterators;
 import java.util.function.Consumer;
 
 /**
@@ -87,15 +89,17 @@ public interface Graph<T> extends Iterable<T> {
 
     /**
      * 获取边的并行遍历器
+     * 参考JDK默认设计
      * @return 边的并行遍历器
      */
     Spliterator<Edge<T>> edgeSpliterator();
 
     /**
      * 边的foreach遍历器
+     * 参考JDK默认设计
      * @param edgeConsumer edge消费者
      */
-    void foreach(Consumer<? super Edge<T>> edgeConsumer);
+    void forEachEdge(Consumer<? super Edge<T>> edgeConsumer);
 
     /**
      * 图的边

@@ -32,16 +32,6 @@ public class AdjacencyMatrixUndirectedGraph<T> extends AbstractUndirectedGraph<T
     }
 
     @Override
-    public void forEach(Consumer<? super T> action) {
-
-    }
-
-    @Override
-    public Spliterator<T> spliterator() {
-        return null;
-    }
-
-    @Override
     public boolean contains(T vertice) {
         return false;
     }
@@ -79,15 +69,5 @@ public class AdjacencyMatrixUndirectedGraph<T> extends AbstractUndirectedGraph<T
     @Override
     public Iterator<Edge<T>> edgeIterator() {
         return null;
-    }
-
-    @Override
-    public Spliterator<Edge<T>> edgeSpliterator() {
-        return null;
-    }
-
-    @Override
-    public void foreach(Consumer<? super Edge<T>> edgeConsumer) {
-
     }
 }
